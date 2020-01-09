@@ -5,6 +5,8 @@
       build: ./players
       ports:
         - 5002:80
+      volumes: 
+        - ./players:/app
     site:
       build: ./site
       ports:
